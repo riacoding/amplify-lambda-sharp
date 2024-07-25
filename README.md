@@ -4,6 +4,7 @@
 First, deploy the sandbox:
 
 ```bash
+npm i
 npx ampx sandbox
 ```
 
