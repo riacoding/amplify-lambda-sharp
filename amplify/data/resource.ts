@@ -16,7 +16,7 @@ const schema = a.schema({
     .model({
       key: a.string().required(),
     })
-    .authorization((allow) => [allow.guest().to(['read']), allow.authenticated()]),
+    .authorization((allow) => [allow.guest().to(['read', 'delete']), allow.authenticated()]),
 })
 
 export type Schema = ClientSchema<typeof schema>
